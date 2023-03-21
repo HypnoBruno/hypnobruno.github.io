@@ -7,9 +7,9 @@ body {
 
 h1 {
   margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 48px;
-  line-height: 44px;
+  margin-bottom: 10px;
+  font-size: 70px;
+  line-height: 80px;
   font-weight: 800;
 }
 
@@ -54,14 +54,15 @@ p {
   min-width: 160px;
   margin-top: 10px;
   margin-bottom: 20px;
+  padding: 10px 20px;
   border-style: solid;
   border-width: 1px;
   border-color: #1c1b1a;
   border-radius: 6px;
   background-color: #1c1b1a;
   color: #fff;
-  font-size: 14px;
-  font-weight: 300;
+  font-size: 16px;
+  font-weight: 500;
   text-align: center;
   letter-spacing: 1px;
   cursor: pointer;
@@ -138,11 +139,6 @@ p {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: #fff;
-}
-
-.section.hero {
-  padding-top: 20px;
-  padding-bottom: 40px;
 }
 
 .action-phone {
@@ -287,6 +283,15 @@ p {
   object-fit: cover;
 }
 
+.bg-size {
+  width: 150%;
+  height: 100%;
+}
+
+.opacity-50 {
+  opacity: 0.5;
+}
+
 @media screen and (max-width: 991px) {
   .bg-video-hero {
     height: 780px;
@@ -299,10 +304,6 @@ p {
     grid-row-gap: 10px;
     -ms-grid-columns: 20px 1fr;
     grid-template-columns: 20px 1fr;
-  }
-
-  .button-primary {
-    font-size: 12px;
   }
 
   .button-primary.dark {
@@ -377,20 +378,19 @@ p {
     padding-left: 35px;
   }
 
-  .bg-color {
-    width: 200%;
-    -o-object-fit: cover;
-    object-fit: cover;
+  .bg-size {
+    width: 300%;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .bg-video-hero {
-    height: 720px;
+  h1 {
+    font-size: 60px;
+    line-height: 70px;
   }
 
-  .button-primary {
-    font-size: 11px;
+  .bg-video-hero {
+    height: 720px;
   }
 
   .button-primary.dark {
@@ -450,13 +450,14 @@ p {
     margin-bottom: 20px;
     padding-left: 25px;
   }
-
-  .bg-color {
-    width: 300%;
-  }
 }
 
 @media screen and (max-width: 479px) {
+  h1 {
+    font-size: 44px;
+    line-height: 60px;
+  }
+
   .bg-video-hero {
     height: 660px;
   }
@@ -477,8 +478,6 @@ p {
 
   .button-primary {
     min-width: auto;
-    padding-right: 10px;
-    padding-left: 10px;
   }
 
   .button-primary.dark {
